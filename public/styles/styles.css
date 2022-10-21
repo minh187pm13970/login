@@ -41,11 +41,18 @@ body {
   .header-menu-icon {
     font-size: 2rem; }
   .header-menu-title {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     margin-left: 1rem;
     text-transform: uppercase;
-    font-size: 2rem;
     font-weight: bold;
-    font-family: "Quicksand", sans-serif; }
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem; }
+  @media (max-width: 479px) {
+    .header-menu-title {
+      font-size: 1.5rem; } }
 
 .option {
   background: linear-gradient(135deg, rgba(206, 27, 40, 0.7) 0%, rgba(17, 17, 17, 0.7) 74%), url("../../images/bg-vlu.jpg") no-repeat center/cover;
@@ -77,6 +84,9 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.6);
     cursor: pointer;
@@ -92,9 +102,12 @@ body {
     height: 15rem;
     margin: 0 auto; }
   .option-signin-title {
-    margin-top: 2rem;
     font-size: 3rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
   .option-desc {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
@@ -112,11 +125,17 @@ body {
     transform: translateX(-50%);
     will-change: transform; }
   .option-desc-text {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     margin-left: 2rem;
     font-size: 2rem; }
   @media (max-width: 1023px) {
     .option-signin-image {
-      width: 40%; } }
+      width: 40%; }
+    .option-signin-title {
+      font-size: 2.5rem; } }
   @media (min-width: 768px) {
     .option-signin {
       display: -webkit-box;
@@ -128,17 +147,28 @@ body {
     .option-signin-item {
       width: calc(50% - 2rem); } }
   @media (max-width: 767px) {
-    .option-signin-item:first-child {
-      margin-bottom: 2rem; }
-    .option-signin-item {
-      width: 60%;
-      margin: 0 auto; } }
+    .option {
+      padding-block: 5rem; }
+      .option-heading {
+        font-size: 3rem; }
+      .option-signin-item:first-child {
+        margin-bottom: 2rem; }
+      .option-signin-item {
+        width: 60%;
+        margin: 0 auto; } }
   @media (max-width: 479px) {
     .option-signin-image {
       width: 50%; }
     .option-signin-item {
       width: 90%;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+    .option-signin-title {
+      font-size: 2rem; }
+    .option-desc-text {
+      margin-left: 1rem;
+      font-size: 1.7rem;
+      text-align: center;
+      line-height: 1.4; } }
 
 .footer {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.9)), to(rgba(175, 137, 130, 0.8))), url("../../images/bg-footer.png") no-repeat center/cover;
@@ -163,7 +193,8 @@ body {
   .footer-info-text {
     font-size: 1.8rem;
     margin-top: 1rem;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 1.4; }
     .footer-info-text span {
       opacity: 0.8;
       font-weight: normal; }
@@ -184,20 +215,20 @@ body {
       -ms-flex-pack: justify;
       justify-content: space-between; } }
   @media (max-width: 767px) {
+    .footer-wrap {
+      padding-block: 5rem; }
     .footer-image {
       width: 50%;
       margin: 0 auto; }
     .footer-info {
-      margin-top: 2rem;
+      margin-top: 2.5rem;
       text-align: center; }
     .footer-info-heading {
       display: none; } }
   @media (max-width: 479px) {
     .footer-info-text {
-      font-size: 1.2rem; } }
-  @media (max-width: 376px) {
-    .footer-info-text {
-      font-size: 1rem; } }
+      font-size: 1.4rem;
+      text-align: left; } }
 
 button,
 input {

@@ -16,10 +16,17 @@
   }
 
   &-menu-title {
+    user-select: none;
     margin-left: 1rem;
     text-transform: uppercase;
-    font-size: 2rem;
     font-weight: bold;
     font-family: $secondary-font;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 479px) {
+    &-menu-title {
+      font-size: 1.5rem;
+    }
   }
 }
