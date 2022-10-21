@@ -1,0 +1,9 @@
+.wrapper {
+  max-width: $wrapper;
+}
+
+.container {
+  width: calc($container + 3rem);
+  padding-inline: 1.5rem;
+  margin: 0 auto;
+}

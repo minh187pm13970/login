@@ -1,0 +1,25 @@
+.header {
+  background-color: #000;
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+  }
+  &-menu-home,
+  &-menu-signin {
+    color: #fff;
+  }
+
+  &-menu-icon {
+    font-size: 2rem;
+  }
+
+  &-menu-title {
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: $secondary-font;
+  }
+}

@@ -1,0 +1,105 @@
+.option {
+  background: linear-gradient(135deg, rgba(#ce1b28, 0.7) 0%, rgba(#111, 0.7) 74%),
+    url("../../images/bg-vlu.jpg") no-repeat center / cover;
+  color: #fff;
+  padding-block: 20rem;
+  margin: 0 auto;
+  &-wrap {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+  &-heading {
+    font-size: 4rem;
+    text-transform: uppercase;
+    user-select: none;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &-signin {
+    margin-top: 5rem;
+  }
+
+  &-signin-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    background-color: rgba(#000, 0.6);
+    cursor: pointer;
+    border-radius: 10px;
+    padding-block: 5rem;
+    transition: background-color 0.2s linear;
+    will-change: background-color;
+    &:hover {
+      background-color: rgba(#000, 0.5);
+    }
+  }
+
+  &-signin-image {
+    width: 30%;
+    height: 15rem;
+    margin: 0 auto;
+  }
+
+  &-signin-title {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &-desc {
+    background-color: rgba(#000, 0.6);
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    will-change: transform;
+  }
+
+  &-desc-text {
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 1023px) {
+    &-signin-image {
+      width: 40%;
+    }
+  }
+  @media (min-width: 768px) {
+    &-signin {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-signin-item {
+      width: calc(50% - 2rem);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &-signin-item:first-child {
+      margin-bottom: 2rem;
+    }
+
+    &-signin-item {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 479px) {
+    &-signin-image {
+      width: 50%;
+    }
+    &-signin-item {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
